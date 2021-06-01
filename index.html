@@ -63,11 +63,11 @@
                 </div>
     
                 <!-- Logo -->
-                <a class="navbar-brand col-2 col-sm-2 col-lg-2 d-flex justify-content-center order-lg-0" href="index.html"><img
+                <a class="navbar-brand col-2 col-sm-1 col-lg-2 d-flex justify-content-center order-lg-0" href="index.html"><img
                         src="./images/iron-guitars-logo-nobg.png" alt="Logo" width="200px"></a>
     
                 <!-- Login y carrito -->
-                <div class="col-4 col-sm-5 col-md-6 col-lg-3 align-self-center d-flex justify-content-around order-lg-2">
+                <div class="col-5 col-sm-6 col-md-6 col-lg-4 col-xl-3 align-self-center d-flex justify-content-around order-lg-2">
                     
                     <!-- Login -->
                     <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#loginModal">
@@ -87,16 +87,16 @@
                                     <div class="modal-body">
                                         <form>
                                             <div class="mb-3">
-                                                <label for="exampleInputEmail1" class="form-label">Dirección de correo electrónico</label>
+                                                <label for="loginInputEmail1" class="form-label">Dirección de correo electrónico</label>
                                                 <input type="email" class="form-control" id="loginInputEmail1" aria-describedby="emailHelp" placeholder="email@hotmail.com">
                                                 <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
                                             </div>
                                             <div class="mb-3">
-                                                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                                <label for="loginInputPassword1" class="form-label">Contraseña</label>
                                                 <input type="password" class="form-control" id="loginInputPassword1" placeholder="Contraseña">
                                             </div>
                                             <div class="mb-3 form-check">
-                                                <input type="checkbox" class="form-check-input" id="loginCheck">
+                                                <input type="checkbox" class="form-check-input" id="loginCheck1">
                                                 <label class="form-check-label" for="loginCheck1">Recuérdame</label>
                                             </div>
                                             <button type="submit" class="btn btn-warning">Ingresar</button>                                            
@@ -167,10 +167,11 @@
                                             </div>
                                             <div class="mb-3 form-check">
                                                 <input type="checkbox" class="form-check-input" id="registroCheck">
-                                                <label class="form-check-label" for="privacidadCheck1">He leído y acepto la <a href="#" class="link-danger">Política de Privacidad</a>.</label>
+                                                <label class="form-check-label" for="privacidadCheck1">He leído y acepto la <a href="#" class="link-danger">Política de Privacidad</a>.*</label>
                                             </div>
+                                            <div id="privacidadHelp" class="form-text text-danger">*Campo requerido</div>
                                             <button type="submit" class="btn btn-warning">Registro</button>
-                                            <div id="privacidadHelp" class="form-text text-danger">*Campo requerido</div>                                            
+                                                                                        
                                         </form>
                                     </div>
                                     <!-- Pie -->
@@ -189,7 +190,7 @@
                 </div>
     
                 <!-- Buscador -->
-                <form class="col-11 col-lg-6 py-lg-4 d-flex order-lg-1 mb-2 mb-lg-0">
+                <form class="col-11 col-lg-5 col-xl-6 py-lg-4 d-flex order-lg-1 mb-2 mb-lg-0">
                     <input class="form-control me-2" type="search" placeholder="Producto, marca..." aria-label="Search">
                     <button class="btn btn-outline-warning" type="submit">Buscar</button>
                 </form>
