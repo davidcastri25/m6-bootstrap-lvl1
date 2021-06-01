@@ -25,149 +25,164 @@
 </head>
 
 <body>
-    
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <!-- Navegación extra superior -->
+    <header>
         <div class="container-fluid">
-            <div class="row text-warning justify-content-between collapse navbar-collapse mb-3" id="navbarSupportedContent">
+    
+            <!-- Navegación extra superior -->
+            <div class="row collapse navbar-collapse d-lg-flex justify-content-around bg-dark py-2"
+                id="navbarSupportedContent">
                 <!-- Page navigation -->
-                <a href="#" class="col-3 link-warning text-decoration-none text-center"><i class="fas fa-book-open me-1"></i><span >Blog</span></a> 
-                <a href="#" class="col-4 link-warning text-decoration-none text-center"><i class="fas fa-users me-1"></i><span >Sobre Nosotros</span></a>
-                <a href="#" class="col-3 link-warning text-decoration-none text-center"><i class="fas fa-phone-alt me-1"></i><span >Contacto</span></a>                                
+                <a href="#" class="col-3 link-warning text-decoration-none text-center">
+                    <i class="fas fa-book-open me-1"></i>
+                    <span>Blog</span>
+                </a>
+                <a href="#" class="col-4 link-warning text-decoration-none text-center">
+                    <i class="fas fa-users me-1"></i>
+                    <span>Sobre Nosotros</span>
+                </a>
+                <a href="#" class="col-3 link-warning text-decoration-none text-center">
+                    <i class="fas fa-phone-alt me-1"></i>
+                    <span>Contacto</span>
+                </a>
             </div>
         </div>
-        
-
-        <!-- Navegación superior -->
-        <div class="container-fluid">
-
-            <div class="row d-flex justify-content-between mb-3">
-
+    
+        <!-- Navegación -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-block">
+    
+            <!-- Navegación superior -->
+            <div class="row flex-grow-1 d-flex justify-content-around">
+    
                 <!-- Botón hamburguesa -->
-                <div class="col-3 align-self-center">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="col-3 col-sm-2 col-md-1 align-self-center d-lg-none">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                </div>                
-
+                </div>
+    
                 <!-- Logo -->
-                <div class="col-2 d-flex justify-content-center">
-                    <a class="navbar-brand" href="index.html"><img src="./images/iron-guitars-logo-nobg.png" alt="Logo" width="200px"></a>
+                <a class="navbar-brand col-2 col-sm-2 col-lg-2 d-flex justify-content-center order-lg-0" href="index.html"><img
+                        src="./images/iron-guitars-logo-nobg.png" alt="Logo" width="200px"></a>
+    
+                <!-- Login y carrito -->
+                <div class="col-4 col-sm-5 col-md-6 col-lg-3 align-self-center d-flex justify-content-around order-lg-2">
+                    <a href="#" class="link-warning text-center text-decoration-none"><i
+                            class="fas fa-sign-in-alt me-1"></i><span class="d-none d-sm-inline">Login</span></a>
+                    <a href="#" class="link-warning text-center text-decoration-none"><i
+                            class="fas fa-user-plus me-1"></i><span class="d-none d-sm-inline">Registro</span></a>
+                    <a href="#" class="link-warning text-center text-decoration-none"><i
+                            class="fas fa-shopping-cart me-1"></i><span class="d-none d-sm-inline">Carrito</span></a>
                 </div>
-
-                <!-- Login y cesta -->
-                <div class="col-4 col-sm-7 align-self-center d-flex justify-content-around text-warning">
-                    <a href="#" class="col-4 link-warning text-center text-decoration-none"><i class="fas fa-sign-in-alt me-1"></i><span class="d-none d-sm-inline">Login</span></a>
-                    <a href="#" class="col-4 link-warning text-center text-decoration-none"><i class="fas fa-user-plus me-1"></i><span class="d-none d-sm-inline">Registro</span></a>
-                    <a href="#" class="col-4 link-warning text-center text-decoration-none"><i class="fas fa-shopping-cart me-1"></i><span class="d-none d-sm-inline">Carrito</span></a>                   
-                </div>
-                
+    
                 <!-- Buscador -->
-                <div class="col-12 mt-3">
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
-                </div>
-                
-                
-            </div>                       
-        </div>
-
-        <!-- Navegación Inferior -->        
-        <div class="container-fluid">
-
-            <!-- Product navigation -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                    <!-- Guitarras -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Guitarras
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Modelos ST</a></li>
-                            <li><a class="dropdown-item" href="#">Modelos T</a></li>
-                            <li><a class="dropdown-item" href="#">Modelos LT</a></li>
-                            <li><a class="dropdown-item" href="#">...</a></li>
-                        </ul>
-                    </li>
-                    <!-- Bajos -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Bajos
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Modelos J</a></li>
-                            <li><a class="dropdown-item" href="#">Modelos P</a></li>
-                            <li><a class="dropdown-item" href="#">...</a></li>
-                        </ul>
-                    </li>
-                    <!-- Amplificación -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Amplificación
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Amplificadores para guitarra</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Cabezales para guitarra</a></li>
-                            <li><a class="dropdown-item" href="#">Combos para guitarra</a></li>
-                            <li><a class="dropdown-item" href="#">...</a></li>
-                            <li><a class="dropdown-item" href="#">Amplificadores para bajo</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Cabezales para bajo</a></li>
-                            <li><a class="dropdown-item" href="#">Combos para bajo</a></li>
-                            <li><a class="dropdown-item" href="#">...</a></li>
-                        </ul>
-                    </li>
-                    <!-- Efectos -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Efectos
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Pedales para guitarra</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Distorsión</a></li>
-                            <li><a class="dropdown-item" href="#">Delay</a></li>
-                            <li><a class="dropdown-item" href="#">...</a></li>
-                            <li><a class="dropdown-item" href="#">Pedales para bajo</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Compresores</a></li>
-                            <li><a class="dropdown-item" href="#">Distorsión</a></li>
-                            <li><a class="dropdown-item" href="#">...</a></li>
-                        </ul>
-                    </li>
-                    <!-- Accesorios -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Accesorios
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Cables</a></li>
-                            <li><a class="dropdown-item" href="#">Púas</a></li>
-                            <li><a class="dropdown-item" href="#">...</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                <form class="col-11 col-lg-6 py-lg-4 d-flex order-lg-1 mb-2 mb-lg-0">
+                    <input class="form-control me-2" type="search" placeholder="Producto, marca..." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+    
             </div>
-        </div>
-    </nav>    
+    
+            <!-- Navegación inferior -->
+            <div class="row flex-grow-1">
+    
+                <!-- Product navigation -->
+                <div class="collapse navbar-collapse p-4 d-lg-flex" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-lg-grow-1 justify-content-lg-around">
+                        <!-- Guitarras -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Guitarras
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Modelos ST</a></li>
+                                <li><a class="dropdown-item" href="#">Modelos T</a></li>
+                                <li><a class="dropdown-item" href="#">Modelos LT</a></li>
+                                <li><a class="dropdown-item" href="#">...</a></li>
+                            </ul>
+                        </li>
+                        <!-- Bajos -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Bajos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Modelos J</a></li>
+                                <li><a class="dropdown-item" href="#">Modelos P</a></li>
+                                <li><a class="dropdown-item" href="#">...</a></li>
+                            </ul>
+                        </li>
+                        <!-- Amplificación -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Amplificación
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Amplificadores para guitarra</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Cabezales para guitarra</a></li>
+                                <li><a class="dropdown-item" href="#">Combos para guitarra</a></li>
+                                <li><a class="dropdown-item" href="#">...</a></li>
+                                <li><a class="dropdown-item" href="#">Amplificadores para bajo</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Cabezales para bajo</a></li>
+                                <li><a class="dropdown-item" href="#">Combos para bajo</a></li>
+                                <li><a class="dropdown-item" href="#">...</a></li>
+                            </ul>
+                        </li>
+                        <!-- Efectos -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Efectos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Pedales para guitarra</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Distorsión</a></li>
+                                <li><a class="dropdown-item" href="#">Delay</a></li>
+                                <li><a class="dropdown-item" href="#">...</a></li>
+                                <li><a class="dropdown-item" href="#">Pedales para bajo</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Compresores</a></li>
+                                <li><a class="dropdown-item" href="#">Distorsión</a></li>
+                                <li><a class="dropdown-item" href="#">...</a></li>
+                            </ul>
+                        </li>
+                        <!-- Accesorios -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Accesorios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Cables</a></li>
+                                <li><a class="dropdown-item" href="#">Púas</a></li>
+                                <li><a class="dropdown-item" href="#">...</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+        </nav>
+    
+    
+    
+    </header>
+        
 
 
 
